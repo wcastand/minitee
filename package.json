@@ -8,13 +8,17 @@
   },
   "scripts": {
     "build": "babel src/ -d lib/",
-    "watch": "babel -w src/ -d lib/",
+    "watch": "babel -w src/ -d lib/"
   },
   "keywords": [
     "template",
     "mini"
   ],
   "author": "William Castandet <wcastand@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wcastand/minitee.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.8.0",
