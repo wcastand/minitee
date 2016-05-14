@@ -1,6 +1,6 @@
 {
   "name": "minitee",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "mini template engine",
   "main": "./lib/index.js",
   "bin": {
