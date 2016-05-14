@@ -2,7 +2,7 @@
 
 Mini template engine.
 
-## Installation (soon)
+## Installation
 
 ```
 npm i -g minitee
