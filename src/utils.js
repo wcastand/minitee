@@ -50,6 +50,9 @@ const createParams = curry(
     }
   }
 )
+
+if(!fs.existsSync(config.src))
+  fs.mkdirSync(config.src)
 const templateFiles = fs.readdirSync(config.src)
 const basicParams = createParams(config)
 
