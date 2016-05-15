@@ -48,7 +48,9 @@
     "mkdirp": "^0.5.1",
     "ramda": "^0.21.0"
   },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
