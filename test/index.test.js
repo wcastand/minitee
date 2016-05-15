@@ -1,8 +1,8 @@
-const expect = require('chai').expect
-const minitee = require('../lib/cli')
+import { expect } from 'chai'
+import minitee from '../src/cli'
 
-describe('minitee', function(){
-  it('should work !', function(){
+describe('minitee', () => {
+  it('should work !', () => {
     expect(true).to.be.true
   })
 })

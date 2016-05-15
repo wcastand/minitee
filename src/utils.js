@@ -50,7 +50,7 @@ const createParams = curry(
     }
   }
 )
-const templateFiles = fs.readDirSync(config.src)
+const templateFiles = fs.readdirSync(config.src)
 const basicParams = createParams(config)
 
 export const templates = templateFiles.map(basicParams)
