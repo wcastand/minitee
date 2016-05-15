@@ -2,6 +2,10 @@
 
 Mini template engine.
 
+[![Travis](https://img.shields.io/travis/wcastand/minitee.svg?style=flat-square)](https://travis-ci.org/wcastand/minitee)
+[![downloads](https://img.shields.io/npm/dm/minitee.svg?style=flat-square)](https://www.npmjs.com/package/minitee)
+[![version](https://img.shields.io/npm/v/minitee.svg?style=flat-square)](https://www.npmjs.com/package/minitee)
+[![license](https://img.shields.io/npm/l/minitee.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 ## Installation
 
 ```
