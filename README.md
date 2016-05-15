@@ -48,7 +48,7 @@ Create a configuration file ".minitee" at the root of your project.
 ```json
 //./minitee
 {
-  "folder": "./examples", //default "./templates"
+  "src": "./examples", //default "./templates"
   "dest": "build" //default "."
 }
 ```
