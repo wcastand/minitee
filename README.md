@@ -60,3 +60,4 @@ Then, in the "examples" folder create your templates.
 
 - Create multiple files with one command ("class", "test", ...)
 - Allow default value to attributes
+- test
