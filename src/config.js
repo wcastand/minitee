@@ -2,16 +2,18 @@ import { resolve } from 'path'
 import fs from 'fs'
 import { curry, compose } from 'ramda'
 
-const configFile = resolve(process.cwd(), '.minitee')
+const cwd = process.cwd()
+const configFile = resolve(cwd, '.minitee')
 const defaults = { src: './templates', dest: '.' }
 const fileContent = fs.existsSync(configFile)
-  ? JSON.parse(fs.readFileSync(configFile, 'utf-8')) : {}
+  ? JSON.parse(fs.readFileSync(configFile, 'utf-8'))
+  : {}
 
-const createConfig = curry(
+export const createConfig = curry(
   (defaultConfig, userConfig) => Object.assign({}, defaultConfig, userConfig)
-)(defaults)
+)
 
-const updatePath = curry(
+export const updatePath = curry(
   (rootDir, config) => {
     return {
       ...config
@@ -19,6 +21,6 @@ const updatePath = curry(
     , dest: resolve(rootDir, config.dest)
     }
   }
-)(process.cwd())
+)
 
-export default compose(updatePath, createConfig)(fileContent)
+export default (compose(updatePath(cwd), createConfig(defaults))(fileContent))
