@@ -60,4 +60,5 @@ Then, in the "examples" folder create your templates.
 
 - Create multiple files with one command ("class", "test", ...)
 - Allow default value to attributes
+- Allow to define the destination in the command line interface
 - test
