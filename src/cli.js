@@ -4,14 +4,7 @@ import mkdirp from 'mkdirp'
 import { templates, parseData } from './utils'
 import { error, success, neutral, infos } from './console'
 
-export const list = () => {
-    infos("List des templates:")
-    templates.map(x => {
-      infos("  %s", x.name)
-      x.attr.map(y => neutral("    - %s", y))
-    })
-  }
-export const cli = (cmd, args)=> {
+export default (cmd, args) => {
     let status = templates.reduce((x, y) => y.name === cmd || x, false)
     const targets = templates.filter(x => x.name.toUpperCase() === cmd.toUpperCase())
     const vv = args.reduce((x, y) => {
