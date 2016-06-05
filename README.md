@@ -38,6 +38,13 @@ minitee react name:List content:"<span>Hello World</span>"
 
 And voila, you just created your first minitee file.
 
+At any time, you can get the list of the templates with the command:
+```
+minitee list
+//or
+minitee list -a
+```
+
 ## Advanced usage
 
 Create a configuration file ".minitee" at the root of your project.
@@ -53,6 +60,7 @@ or create a file manually, this is the equivalent of the previous command:
 ```
 
 Then, in the "examples" folder create your templates.
+If .minitee doesn't exist in the folder. minitee will use the default settings.
 
 ### Multiple files in one command
 
